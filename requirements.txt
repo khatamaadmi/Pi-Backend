@@ -1,0 +1,7 @@
+fastapi~=0.110.3
+uvicorn~=0.25.0
+python-dotenv~=1.0.0
+groq~=0.13.1
+cors
+pydantic~=2.6.4
+
