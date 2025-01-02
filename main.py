@@ -56,6 +56,11 @@ async def chat_endpoint(request: ChatRequest):
         raise HTTPException(status_code=500, detail="An error occurred while processing your request")
 
 
+@app.get("/")
+async def root():
+    return {"message": "Server is running!"}
+
+
 if __name__ == "__main__":
     import uvicorn
 
@@ -66,8 +71,4 @@ if __name__ == "__main__":
         reload=True
     )
 
-
-@app.get("/")
-async def root():
-    return {"message": "Server is running!"}
 
